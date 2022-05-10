@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1465px)" href="phone.css">
+    
+    <style>
+        body{
+            background-color: black;
+           
+       
+        }
+        .container2{
+            position: absolute;
+            top: 550px;
+            left: 700px;
+            height: 200px;
+            padding: 23px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: rgb(3, 2, 2);
+           color: rgb(245, 245, 245);
+           z-index: 34;
+           font-size: 30px;
+           font-family: 'Oleo Script Swash Caps', cursive;
+
+        }
+        
+        .right {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+           position: relative;
+           
+           top: 0px;
+           left: 300px;
+          
+        }
+        .navbar{
+            display: flex;
+            
+            
+        }
+        .item{
+            font-family: 'Noto Serif', serif;
+            font-size: 30px;
+            padding: 23px;
+            
+
+                
+        }
+        @keyframes ups{
+            0%{
+                top: 20px;
+           right: 550px;
+            }
+            50%{
+                top: 10px;
+           right: 550px;
+            }
+            100%{
+                top: 20px;
+           right: 550px;
+            }
+        }
+        .image1{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+            z-index: 20;
+
+            width: 800px;
+            height: 600px;
+            opacity: 0.5;
+        }
+        .image2{
+            width: 1300px;
+            height: 600px;
+           position: absolute;
+           top: 1000px;
+           left: 200px;
+           z-index: 14;
+           opacity: 0.3;
+           
+        }
+        .container3{
+            position: absolute;
+            top: 900px;
+            left: 100px;
+            height: 600px;
+            padding: 23px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: rgb(3, 2, 2);
+           color: rgb(245, 245, 245);
+           z-index: 34;
+           font-size: 30px;
+           font-family: 'Oleo Script Swash Caps', cursive;
+
+        }
+        .container4{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 1700px;
+            
+            background-color: grey;
+            width: 1200px;
+            height: 300px;
+            justify-content: center;
+           margin: auto;
+            flex-wrap: wrap;
+            padding: 45px;
+            margin: 20px;
+            border-radius: 20px;
+            
+        }
+        .firstbox{
+            background-color: black;
+            color: azure;
+            width: 250px ;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 13px 10px white;
+            transition-property: background-color ;
+            transition-duration: 1s ;
+
+
+        }
+        .firstbox:hover{
+            background-color: gray;
+
+        }
+        .secondbox{
+            background-color: rgb(244, 235, 235);
+            color: black;
+            width: 250px ;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 13px 10px rgb(8, 8, 8);
+            transition-property: background-color ;
+            transition-duration: 1s ;
+            
+            
+        }
+        .secondbox:hover{
+            background-color: gray;
+
+        }
+        .thirdbox{
+            background-color: black;
+            color: azure;
+            width: 250px ;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 13px 10px white;
+            transition-property: background-color ;
+            transition-duration: 1s ;
+            
+        }
+        .thirdbox:hover{
+            background-color: gray;
+
+        }
+        .image3{
+            width: 1300px;
+            height: 600px;
+           position: absolute;
+           top: 2300px;
+           left: 100px;
+           z-index: 14;
+           
+        }
+        .container5{
+            position: absolute;
+           top: 2200px;
+           left: 100px;
+           
+           color: white;
+           font-size: 30px;
+           z-index: 20;
+           display: flex;
+        }
+        .icon1{
+            z-index: 21;
+            position: absolute;
+            top: 160px;
+            left: 100px;
+            
+            width: 100px;
+            height: 100px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .icon1:hover{
+            width: 120px;
+            height: 120px;
+        }
+       .icon2{
+            z-index: 21;
+            position: absolute;
+            top: 160px;
+            left: 250px;
+            width: 100px;
+            height: 100px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .icon2:hover{
+            width: 120px;
+            height: 120px;
+        }
+        .icon3{
+            z-index: 21;
+            position: absolute;
+            top: 160px;
+            left: 400px;
+            width: 100px;
+            height: 100px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .icon3:hover{
+            width: 120px;
+            height: 120px;
+        }
+        .hello{
+            color: palevioletred;
+            font-size: 55px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            text-shadow: 2px 2px white;
+            
+            font-family: 'Water Brush', cursive;
+            transition-property: all;
+            transition-duration: 1.5s;
+
+        }
+        .hello:hover{
+            transform: translateY(70px);
+        }
+        .navbar li a:hover{
+           
+            color: rgb(58, 58, 58)
+        }
+        li a::after{
+            content: '';
+            position: absolute;
+            display: block;
+            height: 0.1em;
+            width: 0%;
+            background-color: azure;
+            bottom: -0.5em;
+            transition: all ease-in-out 250ms;
+        }
+        li:first-child{
+            margin-right: auto;
+            margin-left: 3em;
+        }
+        li a:hover::after{
+            width: 20%;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul class="right">
+                    <li  class="item"> <a href="#home">Home</a> </li>
+                    <li class="item"> <a href="#about">AboutMe</a> </li>
+                    <li class="item"><a href="#contact">contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <div class="hello">
+            Hey! this is Harika
+        </div>
+
+        
+
+    </div>
+
+    <div class="left">
+        <img src="home.jpg" class="image1" alt="">
+        
+    </div>
+
+    <section class="homesection" >
+        <div class="container2" id="home">
+            Hi! I am Harika Thummala lives in Andhra Pradesh. I am first year undergraduate student in the department of electronics and electrical communication engineering at IIT KHARAGPUR.
+        </div>
+    </section>
+    <section class="aboutimg">
+        <img src="about.jpg" class="image2" alt="">  
+    </section>
+    <section class="aboutsection" >
+        <div class="container3" id="about">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorem ipsam odit. Odit tenetur adipisci quis neque accusamus ad error doloribus numquam. Aut omnis ut sit fugit suscipit amet, alias quasi. Porro, fugiat sed. Et explicabo omnis ipsa autem, reiciendis ducimus, voluptatem temporibus nisi quod est ipsam, delectus in ipsum necessitatibus magni sunt sint placeat error cupiditate nam facilis ad!</p>
+        </div>
+        <div class="container4">
+            <div class="firstbox">
+                <h4>My Work</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quis quibusdam dignissimos, odit soluta rem illum sapiente accusantium nisi veniam delectus incidunt voluptatem porro commodi vero quod nesciunt itaque perspiciatis!</p>
+
+            </div>
+            <div class="secondbox">
+                <h4>My Hobbies</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quis quibusdam dignissimos, odit soluta rem illum sapiente accusantium nisi veniam delectus incidunt voluptatem porro commodi vero quod nesciunt itaque perspiciatis!</p>
+                
+            </div>
+            <div class="thirdbox">
+                <h4>My intersts</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quis quibusdam dignissimos, odit soluta rem illum sapiente accusantium nisi veniam delectus incidunt voluptatem porro commodi vero quod nesciunt itaque perspiciatis!</p>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <img src="contact.jpg" class="image3" alt=""> 
+    </section>
+
+    <section class="contactsection">
+        <div class="container5" id="contact">
+            <h3>FOLLOW ME ON</h3>
+            
+            
+            <div class="Instagram">
+                <img src="instagram.jpg" class="icon1"  alt=""> 
+
+            </div>
+            <div class="Linkedin">
+                <img src="linkedin.jpg" class="icon2" alt=""> 
+
+            </div>
+            <div class="twitter">
+                <img src="twitter.jpg" class="icon3" alt=""> 
+
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+</html>

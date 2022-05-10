@@ -1,0 +1,10 @@
+.right{
+    flex-direction: row;
+    align-content: center;
+    
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
